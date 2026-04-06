@@ -86,7 +86,7 @@ $$ \sigma = \sqrt{\frac{1}{N} \sum_{t=1}^{N} (r_t - \bar{r})^2} $$
 Correlation between two assets \( X \) and \( Y \) is defined as:
 
 
- $$ \mathbb{C}or_{X,Y} = \frac{\mathbb{C}ov(X,Y)}{\sigma_X \sigma_Y} $$
+ $$Cor(X,Y) = \frac{Cov(X,Y)}{\sigma_X \sigma_Y} $$
 
 
 - Values range from -1 to 1:
@@ -94,9 +94,72 @@ Correlation between two assets \( X \) and \( Y \) is defined as:
   - 0 → no correlation
   - -1 → perfect negative correlation
 
-## Key visualizations
+### Sharpe Ratio
+
+The Sharpe ratio is defined as:
+
+$$ S= \frac{R_p - R_f}{\sigma_p}$$
+
+with:
+  - $R_p$ = portfolio/asset return
+  - $R_f$ = risk-free rate
+  - $\sigma_p$ = volatility 
+
+
+Yet for an individual asset, the Sharpe ratio is computed as:
+
+$$
+S = \frac{\mu - R_f}{\sigma}
+$$
+
+with: 
+  - $\mu$ = average return over time period
+  - $\sigma$ = volatility
+  - $R_f$ = risk-free rate
+
+In this analysis, the risk-free rate is approximated to 0 for simplicity.
+
+In practice, the risk-free rate corresponds to returns on short-term government bonds.
+However, since these rates are relatively small compared to stock market returns,
+this approximation does not significantly affect comparative results.
+
+## 4. Key visualizations
 
 ### Normalized Price Evolution
 ![Normalized Prices](Figures\stock_price_10y_N.png)
 
-###
+### Daily returns
+![Returns](Figures\daily_returns.png)
+
+### Correlation Matrix
+
+![Correlation Matrix Heatmap](Figures\Corr_M_10y.png)
+
+### Volatility Comparison
+
+![Volatility](Figures\Y_Volatility_10y.png)
+
+### Tables
+
+Summary statistics include:
+
+- Mean daily returns
+- Annualized returns
+- Volatility
+- Correlation matrix
+
+
+Sharpe Ratio table:
+
+    Ticker
+    AAPL    0.906949
+    AMD     0.973193
+    MSFT    0.972633
+    NVDA    1.359236
+
+### Observations
+
+- Growth trends differ significantly between assets
+- Some stocks exhibit much higher volatility than others
+- Correlations between major tech stocks are generally positive
+
