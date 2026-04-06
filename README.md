@@ -129,15 +129,15 @@ this approximation does not significantly affect comparative results.
 ![Normalized Prices](https://github.com/Thomas-Giovanopoulos/Stock-market-analysis/blob/c47184084baf64fc6932c8e53df83b334df09457/Figures/stock_price_10y_N.png)
 
 ### Daily returns
-![Returns](Figures\daily_returns.png)
+![Returns](https://github.com/Thomas-Giovanopoulos/Stock-market-analysis/blob/638bdcb8e92b177c759151967eaf85dc23dc4aa1/Figures/daily_returns.png)
 
 ### Correlation Matrix
 
-![Correlation Matrix Heatmap](Figures\Corr_M_10y.png)
+![Correlation Matrix Heatmap](https://github.com/Thomas-Giovanopoulos/Stock-market-analysis/blob/638bdcb8e92b177c759151967eaf85dc23dc4aa1/Figures/Corr_M_10y.png)
 
 ### Volatility Comparison
 
-![Volatility](Figures\Y_Volatility_10y.png)
+![Volatility](https://github.com/Thomas-Giovanopoulos/Stock-market-analysis/blob/638bdcb8e92b177c759151967eaf85dc23dc4aa1/Figures/Y_Volatility_10y.png)
 
 ### Tables
 
