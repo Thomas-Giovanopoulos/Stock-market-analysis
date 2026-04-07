@@ -17,7 +17,7 @@
 
 \setmainfont{Times New Roman}
 
-\addbibresource{References.bib}
+\addbibresource{Report_Project_1_SC/References.bib}
 
 
 \newcommand{\hmwkTitle}{Python For Finance - Project 1}
@@ -239,6 +239,8 @@ To compute and limit repetition, those formulas\footcite{numpy} were computed in
 \end{lstlisting}
 
 With \texttt{TRADING\_DAYS} being a constant set at \texttt{252} approximating the number days where market are open per year.
+\vspace{0.3cm}
+All returns and volatility measures are expressed in percentage terms.
 \pagebreak
 \section{Performance and Risk Analysis}
 
@@ -271,20 +273,20 @@ This section's goal is to analyze performance and the associated Risk of each as
   \caption{Assets Caracteristics Key Visualization}
 \end{figure}
 
-\subsection{Observations and Dicussion}
+\subsection{Observations and Discussion}
 
 
-The first obvious observation on figure 1.a is that Nvidia is clearly the best performing stock of our study group. This means that for every dollar invested in 2016, the investor would've gained about \$400. Leading to other stocks looking flat in comparison, not because they're bad but because they are overshadowed by Nvidia.
+The first obvious observation on figure 1a is that Nvidia is clearly the best performing stock of our study group. This means that for every dollar invested in 2016, the investor would've gained about \$400. Leading to other stocks looking flat in comparison, not because they're bad but because they are overshadowed by Nvidia.
 \pagebreak
 
-With intent of studying each asset, a new normalized price graph was plotted 1.b, where by plotting exclusively the lower bracket, growth of Microsoft and Apple is much more striking, it is also much more obvious how positively correlated Apple is with Microsoft greatly limiting diversification.
+With intent of studying each asset, a new normalized price graph was plotted 1b, where by plotting exclusively the lower bracket, growth of Microsoft and Apple is much more striking, it is also much more obvious how positively correlated Apple is with Microsoft greatly limiting diversification.
 
 \vspace{0.3cm}
 In a nutshell, one stock with extreme performance (Nvidia) can dominate a normalized price chart, making it difficult to actually compare their assets. Alternative scaling (such as logarithmic scale) provides a more balanced view.
 
 
 
-Furthermore, as seen on figure 1.c, AMD followed by Nvidia have the widest range of variations during our studied time period, we even observe a large spike of 50\% in 2016, this is an exceptionally high day return.
+Furthermore, as seen on figure 1c, AMD followed by Nvidia have the widest range of variations during our studied time period, we even observe a large spike of 50\% in 2016, this is an exceptionally high day return.
 
 \vspace{0.3cm}
 The spike in question happened 2016-04-22, financial press speaks of the "best day [for AMD shares] in over 40 years"\footcite{marketwatch_amd} \textcolor{blue}{\href{https://www.marketwatch.com/story/amds-stock-has-best-day-in-40-years-after-china-jv-deal-q1-results-2016-04-22}{Market watch article}} and another article from Yahoo Finance explains \textcolor{blue}{\href{https://finance.yahoo.com/news/why-did-amd-stock-jump-154505561.html?guccounter=1}{Why Did AMD’s Stock Jump More Than 50\% in a Day?}}\footcite{yahoo_amd_jump}
@@ -295,10 +297,10 @@ Additionally, this jump is also explained by the low price of AMD's shares in 20
 In short, large apparent spikes in returns can result from low initial price levels, big news or earnings anouncements. Zooming into shorter timeframes helps better interpret these movements.
 
 \vspace{0.3cm}
-Yet, since some assets exhibit extreme daily returns, such as AMD with moves exceeding 50\% in a single trading day, these outliers highlight the high volatility of certain stocks, particularly during periods of structural change, crisis, or market uncertainty. And thus, larger positive returns are often associated with higher overall volatility, showing that a strong performance comes with significant risk. This is highlighted by figure 1.d and AMD's yearly volatility averaging 58.8\%, a very high volatility. Closely followed by Nvidia (NVDA) averaging a volatility of 48.7\%. However, as surprising as it might seem, AMD and Nvdia were the best assets to hold during the time period studied. This surprising observations shines light on the fact that an array of metrics are necessary in order to evaluate the risk and returns offered by an asset.
+Yet, since some assets exhibit extreme daily returns, such as AMD with moves exceeding 50\% in a single trading day, these outliers highlight the high volatility of certain stocks, particularly during periods of structural change, crisis, or market uncertainty. And thus, larger positive returns are often associated with higher overall volatility, showing that a strong performance comes with significant risk. This is highlighted by figure 1.d and AMD's yearly volatility averaging 58.8\%, a very high volatility. Closely followed by Nvidia (NVDA) averaging a volatility of 48.7\%. However, as surprising as it might seem, AMD and Nvdia delivered the highest returns over the period, albeit at the cost of significantly higher risk. This surprising observation shines light on the fact that an array of metrics are necessary in order to evaluate the risk and returns offered by an asset.
 
 \vspace{0.3cm}
-\subsection{Risk Evalutation through the Sharpe Ratio}
+\subsection{Risk Evaluation through the Sharpe Ratio}
 To extend, in order to determine which asset rewarded the investor with the best returns for the risk taken. In short, Sharpe's ratio represents how much return you get per unit of risk. Naturally, high return and low risk are important, the Sharpe's ratio tells us how efficiently we combine both. Computation yielded the following results: 
 \vspace{0.15cm}
 \begin{center}
@@ -376,22 +378,39 @@ In order to select data from the relevant time period, we use the \texttt{.loc} 
     \caption{ }
   \end{subfigure}
 
-  \caption{Assets Caracteristics Key Visualization during Market Stress}
+  \caption{Assets Characteristics Key Visualization during Market Stress}
 \end{figure}
 \pagebreak
-\subsection{Result Analysis and Dicussion}
+\subsection{Result Analysis and Discussion}
 
-Surprisingly, despite lockdowns and the pandemic, performances of our study group were excellent in 2020 figure 3.a . This shows that certain sectors can be impacted more than others in times of crisis. Yet the key study point is the correlation Matrix, which will give us insight as to how our study group acted one to another.
+Surprisingly, despite lockdowns and the pandemic, performances of our study group were excellent in 2020 figure 3a . This shows that certain sectors can be impacted more than others in times of crisis. Yet the key study point is the correlation Matrix, which will give us insight as to how our study group acted one to another.
 \vspace{0.3cm}
 
-We can then see on figure 3.b that our tech giants are heavily correlated one to another, as a matter of fact, the lowest correlation factor in 2020 equates to the highest factor on the 10 year study. This shows that during market stress, correlation between actors of an industry increases, their behavior tends to follow the same framework. This reduces portfolio diversification exactly when you need it the most.
+We can then see on figure 3b that our tech giants are heavily correlated one to another, as a matter of fact, the lowest correlation factor in 2020 equates to the highest factor on the 10 year study. This shows that during market stress, correlation between actors of an industry increases, their behavior tends to follow the same framework. This reduces portfolio diversification exactly when you need it the most.
 
 \vspace{0.3cm}
 Furthermore, on average, volatility was greater during the 2020 crisis, mainly due to market uncertainty and instability. It is valuable to retain the fact that over a longer study period, volatility is smoothed. However we can still state that under market tension, volatility and risk increases for the portfolio owner.
 
 \vspace{0.3cm}
-In short, during market crises assets of the same sector tend to follow the same framework, mainly due to industry wide dominant factors, this aligns assets one to another and greatly limits diversification. As a result, since uncertainty rules markets, volatility increases which compounds with the augmented correlation creating a dangerous situation for overexposed investors.
+In short, during market crises assets of the same sector tend to follow the same framework, mainly due to industry wide dominant factors, this aligns assets one to another and greatly limits diversification. As a result, since uncertainty rules markets, volatility increases which compounds with the augmented correlation creating a dangerous situation for overexposed investors. This confirms that diversification benefits are time-varying and tend to deteriorate during periods of systemic market stress.
 
+
+\section{limitations}
+
+This section aims to explore our study's limitations and biases.
+\vspace{0.3cm}
+
+Firstly, by studying only tech stocks this study has a significant sector bias. Also, past performance does not guarantee future results, leading to a notable historical bias. Then, in order to simplify the study we made no consideration of external macroeconomic variables, industry-specific factors only affecting individual tech companies, such as but not limited to: revenue drivers (product demand, market share),  cost structure (High R\&D expenses, manufacturing cost), and innovation. 
+
+\vspace{0.3cm}
+In other words, while returns, volatility, and correlation capture firm-level performance and risk, they are also influenced by broader macroeconomic conditions such as interest rates, inflation, and overall market sentiment. In this sense, these financial indicators reflect not only microeconomic behavior but also the impact of systemic factors that affect all companies simultaneously, especially during periods of economic stress.
+
+\vspace{0.3cm}
+Secondly, we used the Sharpe Ratio to study the relationships between risk and return. The Sharpe ratio itself presents several limitations, particularly when the risk-free rate is approximated to zero. In this case, the ratio simplifies to a return-to-volatility measure, losing its interpretation as excess return per unit of risk. Additionally, when returns are close to zero, the Sharpe ratio provides little discrimination between assets, even if their risk profiles differ significantly.
+
+\vspace{0.3cm}
+Moreover, the Sharpe ratio assumes normally distributed returns and penalizes all volatility equally, regardless of whether it arises from positive or negative deviations. In fact, investors do not mind at all upwards volatility, in fact they love it. This can lead to misleading conclusions, especially for assets exhibiting extreme returns or asymmetric risk profiles.
+\pagebreak
 \section{Conclusion}
 
 This project aimed to explore the fundamental characteristics of financial assets through the analysis of major technology stocks, focusing on returns, volatility, and correlations.
