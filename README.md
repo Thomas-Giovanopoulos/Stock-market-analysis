@@ -137,7 +137,7 @@ this approximation does not significantly affect comparative results.
 
 ### Volatility Comparison
 
-![Volatility](https://github.com/Thomas-Giovanopoulos/Stock-market-analysis/blob/638bdcb8e92b177c759151967eaf85dc23dc4aa1/Figures/Y_Volatility_10y.png)
+![Volatility](https://github.com/Thomas-Giovanopoulos/Stock-market-analysis/blob/c5c9b55d98b8d842c6b911ff561d512c4b4be9ca/Figures/Y_Volatility_10y.png)
 
 ### Tables
 
